@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <!-- Description -->
+    <title>Soto de Espinillos</title>
+    <meta name="author" content="Alberto Barra Parga">
+    <meta name="description" content="Soto de Espinillos">
+    <meta charset="UTF-8">
+    <!-- Style, mi hoja de estilo propio-->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+
+    <link href='css/L.Control.MousePosition.css' rel='stylesheet' />
+    <link href='css/Control.MiniMap.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Soto de Espinillos</h1>
+      <p>¡Conócelo, cuídalo, protégelo!</p>
+    </div>
+    <div class="nav">
+      <a href="file:///C:/Users/ARRAY/Documents/VISOR/index.html">Inicio</a>
+      <a href="file:///C:/Users/ARRAY/Documents/VISOR/index_info.html">Información</a>
+      <a href="file:///C:/Users/ARRAY/Documents/VISOR/index_contacto.html">Contacto</a>
+    </div>
+    <div class="right">
+      <h4>¿Dónde estamos?</h4>
+      <p>El paraje de Soto de Espinillos está consolidado como un elemento <br>
+      del paisaje crucial en lo que a conectividad ecológica se refiere, ya que <br>
+      se comporta como nexo entre los diferentes componentes de la Red Natura 2000 <br>
+      localizados en la Comunidad de Madrid y Castilla-La Mancha.</p>
+      <h4>Un valor histórico y ambienal</h4>
+      <p>Hipotético emplazamiento de una aldea medieval llamada Castil del Lobos, fue durante <br>
+        el siglo XX una importante finca agraria que empleó a muchos vecinos torrejoneros. Este <br>
+        espacio dio lugar al último vino elaborado en Alcalá: el Tinto de Espinillos </p>
+    </div>
+  <!--VISOR CARTOGRÁFICO-->
+    <div id=map>
+    </div>
+    <!--Leaflet scrips-->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+    <script src="https://unpkg.com/@ngageoint/leaflet-geopackage@2.0.5/dist/leaflet-geopackage.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+
+    <script src="Leaflet-WFST-master/src/WFS.js"></script>
+    <script src="js/Leaflet.Spain.WMS.js"></script>
+    <script src="js/Leaflet.MakiMarkers.js"></script>
+    <script src="js/Control.MiniMap.js"></script>
+    <script src='js/L.Control.MousePosition.js'></script>
+
+    <!--Lincar capas-->
+    <script type="text/javascript" src='js/ecosistemas.js'></script>
+    <!--JavaScript link-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Encuesta de satisfacción -->
+    <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  		<div class="wrapper_row" style="">
+  			<div class="row js_error_placement_parent step_2">
+  				  <div class="m_header_step" data-step="2">
+  					<h2 class="js_error_placement quizz_question required_field">¿Qué valoración le darías al destino que has visitado?</h2>
+  				  </div>
+  				  <div class="form_fields star_numbers_row" data-score-name="participation[promo_response_attributes]response_11730">
+  						<ul class="m_options_list js_star_numbers">
+  							<li class="star_number_0 star_number">
+  								<input class="m_option_input js_quizz_radio" type="radio" value="0" name="participation[promo_response_attributes][response_11730]" id="participation_promo_response_attributes_response_11730_0">
+  								<label class="m_option_label" for="participation_promo_response_attributes_response_11730_0">0</label>
+  								<span class="b_legend">Muy negativa</span>
+  							</li>
+  							<li class="star_number_1 star_number">
+  								<input class="m_option_input js_quizz_radio" type="radio" value="5" name="participation[promo_response_attributes][response_11730]" id="participation_promo_response_attributes_response_11730_1">
+  								<label class="m_option_label" for="participation_promo_response_attributes_response_11730_1">5</label>
+                  <span class="l_legend">Indiferente</span>
+                </li>
+  							<li class="star_number_10 star_number">
+  								<input class="m_option_input js_quizz_radio" type="radio" value="10" name="participation[promo_response_attributes][response_11730]" id="participation_promo_response_attributes_response_11730_10">
+  								<label class="m_option_label" for="participation_promo_response_attributes_response_11730_10">10</label>
+  			          <span class="l_legend">Muy positiva</span>
+  							</li>
+  						</ul>
+  				  </div>
+  			</div><!-- - class=row -->
+  		</div><!-- - class=wrapper_row -->
+  	</section>
+    <footer style="font-size: 2; font-family: Helvetica; text-align:center">
+    Ayuntamiento de Alcalá de Henares - Universidad de Alcalá
+    </footer>
+  </body>
+</html>

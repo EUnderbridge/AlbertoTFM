@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background-color: #CEF6CE;
+}
+
+.header {
+  background-color: #BCF5A9;
+  padding: 20px;
+  text-align: center;
+}
+.nav {
+  overflow: hidden;
+  background-color: #071907;
+}
+.nav a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#map {
+  width: 700px;
+  height: 500px;
+};
+.rigth {
+  float: right;
+  padding: 20px;
+}
